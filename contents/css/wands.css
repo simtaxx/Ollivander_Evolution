@@ -1,0 +1,272 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-buton {
+  margin-left: 21px;
+  margin-top: 21px;
+}
+.img-home {
+  width: 21px;
+  margin-top: 21px; 
+}
+summary {
+  padding: 10px;
+  margin-left: 80px;
+  outline: none;
+  position: relative;
+}
+summary::-webkit-details-marker {
+  opacity: 0;
+} 
+.plus-icon {
+  width: 15px;
+  position: absolute;
+  right: 60;
+}
+.glass-icon {
+  width: 22px;
+  position: absolute;
+  left: -10;
+}
+h2 {
+  font-family: 'Lancelot';
+  font-size: 24px;
+  position: absolute;
+  top: 60;
+  left: 40;
+}
+.article-1-bis {
+  font-family: 'Lancelot';
+  width: 80%;
+  margin-left: 35px;
+  margin-top: 40px;
+}
+.article-2-bis {
+  font-family: 'Lancelot';
+  width: 80%;
+  margin-left: 35px;
+}
+.article-3-bis {
+  font-family: 'Lancelot';
+  width: 80%;
+  margin-left: 35px;
+}
+.article-4-bis {
+  font-family: 'Lancelot';
+  width: 80%;
+  margin-left: 35px;
+}
+.article-5-bis {
+  font-family: 'Lancelot';
+  width: 80%;
+  margin-left: 35px;
+}
+.baguette-1-a {
+  width: 250px;
+}
+.contents-article {
+  font-size: 14px;
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  padding: 7px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: justify;
+}
+.details {
+  font-family: 'Lancelot';
+  font-size: 20px;
+}
+.text-details {
+  font-size: 14px;
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  padding: 45px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: justify;
+}
+.line-cara-1 {
+  width: 236px;
+  color: #C4C4C4;
+}
+/* footer wand1 */ 
+
+.footer-article-1 {
+  background-color:#231322;
+  width: 100%;
+  height: auto;
+}
+.icones {
+  display: flex;
+  justify-content: space-around;
+}
+.twitter-bis {
+  width: 40px;
+}
+.facebook-bis {
+  width: 40px;
+}
+.instagram-bis {
+  width: 40px;
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    width: 100%;
+    height: 100vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home-buton {
+    position: absolute;
+    left: 30px;
+  }
+  .img-home {
+    width: 40px;
+    height: 36px;
+    margin-top: 15px; 
+    transition: transform 0.2s;
+  }
+  .img-home:hover {
+    transform: scale(1.1);
+  }
+  h2 {
+    font-family: 'Lancelot';
+    font-size: 24px;
+    position: absolute;
+    top: 80;
+    left: 80;
+  }
+  .contents {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  .article-1-bis {
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .baguette-1-a {
+    width: 300px;
+  }
+  .article-x {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .article-2-bis {
+    width: 400px;
+  }
+  .article-3-bis {
+    width: 400px;
+  }
+  .article-4-bis {
+    width: 400px;
+  }
+  .article-5-bis {
+    width: 400px;
+  }
+  .line-cara-1 {
+    position: absolute;
+    left: 90;
+    top: 400;
+    width: 200;
+  }
+  .line-cara-1a {
+    position: absolute;
+    left: 782;
+    top: 600;
+    width: 650;
+  }
+  .details {
+    position: absolute;
+    left: 20;
+    top: 600;
+  }
+  .text-details {
+    width: 570px;
+  }
+  .title-article {
+    margin: 0 auto;
+  }
+  .details {
+    margin-top: -175px;
+    margin-right: 555px;
+    width: 250;
+  }
+  summary {
+    opacity: 0.6;
+    transition: opacity 0.5s ;
+  }
+  summary:hover {
+    opacity: 1;
+  }
+  .text-details {
+    width: 285px;
+  }
+  .plus-icon {
+    position: absolute;
+    right: -80;
+  }
+  .glass-icon {
+    position: absolute;
+    left: -50;
+  }
+}
+@media (min-width: 1366px) {
+  body {
+    height: 900px;
+  }
+  .home-buton {
+    margin-top: 15px;
+  }
+  h2 {
+    font-family: 'Lancelot';
+    font-size: 24px;
+    position: absolute;
+    top: 80;
+    left: 500;
+  }
+  .contents {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  .article-1-bis {
+    justify-content: center;
+  }
+  .baguette-1-a {
+    width: 550px;
+  }
+  .article-x {
+    flex-direction: column;
+  }
+  .article-2-bis {
+    width: 600px;
+    margin-right: 30px;
+  }
+  .article-3-bis {
+    width: 600px;
+  }
+  .article-4-bis {
+    width: 600px;
+  }
+  .article-5-bis {
+    width: 600px;
+  }
+  .line-cara-1 {
+    position: absolute;
+    left: 816px;
+    top: 450px;
+    width: 585px;
+  }
+  .details {
+    position: absolute;
+    left: 790;
+    top: 640;
+  }
+  .text-details {
+    width: 570px;
+    line-height: 30px;
+  }
+}

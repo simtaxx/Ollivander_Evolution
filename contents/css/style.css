@@ -1,0 +1,388 @@
+@font-face{
+  font-family: 'Lancelot';
+  src:  url(../font/Lancelot/lancelot-v7-latin-regular.woff) format('woff'),url(../font/Lancelot/lancelot-v7-latin-regular.woff2) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Montserrat';
+  src:  url(../font/Montserrat/montserrat-v12-latin-regular.woff) format('woff'),url(../font/Montserrat/montserrat-v12-latin-regular.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes up-and-down{
+  from{
+    transform: translateY(-20px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+* { 
+  box-sizing: border-box;
+}
+
+
+
+/*header */ 
+
+.header-index {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/Homepage Ollivander/Background_mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Lancelot';
+  padding: 2px;
+  color: white;
+  font-size: 24px;
+}
+
+.title {
+  background-color: #FBCB04;
+  font-family: 'Lancelot';
+  padding: 2px;
+  width: 78px;
+}
+
+.scroll-buton {
+  position: absolute;
+  bottom: 1;
+}
+
+.img-button {
+  width: 50px;
+  transition: width 0.5s;
+}
+
+.img-button:hover {
+  width: 55px;
+}
+
+.scroll-buton{
+  animation: up-and-down 1s infinite alternate ;
+}
+/* header fin */ 
+
+
+
+/* body */
+
+body {
+  
+  scroll-behavior: smooth;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  
+  
+}
+
+.h2-body{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+} 
+
+
+.container{
+  display : block;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.item{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.item p {
+  text-align: center;
+  font-family: 'Lancelot';
+}
+
+h2 {
+  font-family: 'Lancelot';
+  padding: 2px;
+  color: black;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left:20px;
+}
+
+.wand-name {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.wand {
+  text-align: center;
+  width: 250px;
+  height: 170px;
+}
+
+.about {
+  text-decoration: none;
+  color: #0074C8;
+  text-align: center;
+  
+}
+
+.about:hover{
+  text-decoration: underline;
+}
+
+.img-home {
+  height: 21px;
+  margin-left: 21px;
+  margin-top: 21px;
+}
+
+.is-reached{
+  opacity: 1;
+}
+
+
+/* body fin */
+
+
+
+
+/* Footer */ 
+
+.footer-index {
+  background-color:#231322;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+}
+
+.nyc {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+.cover-article {
+  height: 140px;
+  ; 
+}
+.photo-footer{
+  margin: 20px 5% 0 5%;
+  text-align: center;
+}
+.icones {
+  display: flex;
+  justify-content: center; 
+  margin-top: 40px;
+}
+
+.twitter {
+  width: 60px;
+  transition: transform .2s;
+}
+
+.facebook {
+  width: 60px;
+  transition: transform .2s;
+}
+
+.instagram {
+  width: 60px;
+  transition: transform .2s;
+}
+
+.follow {
+  text-align: center;
+  color: white;
+  font-family: Roboto;
+  margin-top: 30px;
+}
+
+.QNA { 
+  text-align: center;
+  color: white;
+  font-family: Roboto;
+  margin-top: 30px;
+}
+
+.line1 {
+  width: 60px;
+}
+
+.line2 {
+  width: 60px;
+}
+
+.icon2 {
+  display: flex;
+  justify-content: center;
+}
+
+.hat{
+  margin-top: 25px;
+  width: 60px;
+  margin-bottom: 50px;
+  transition: transform .2s;
+}
+.twitter:hover {
+  transform: scale(2);
+}
+.facebook:hover {
+  transform: scale(2);
+}
+
+.instagram:hover {
+  transform: scale(2);
+}
+.hat:hover {
+  transform: scale(2);
+}
+.details {
+  font-family: 'Lancelot';
+  font-size: 16px;
+}
+.text-details {
+  font-family: Libre Baskerville;
+  font-size: 14px;
+}
+
+/* mediaquery home page */
+
+@media (min-width:768px){
+  
+  .header-index{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/Homepage Ollivander/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-index h1{
+    font-size: 64px;
+  }
+
+  .title{
+    font-size: 64px;
+  }
+  
+  .container{
+    opacity:0;
+    display:flex;
+    justify-content: space-around;
+    transition: opacity  2s;
+  }
+  .is-reached{
+    opacity: 1;
+  }
+
+  .container-article{
+    display:flex;
+    justify-content:space-around;
+  }
+  .une{
+    font-size: 30px;
+  }
+  img {
+    transition: transform 1s;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  .cover-article {
+    width: 330px;
+    height: 210px;
+  }
+
+  .teaser{
+    align-items: right;
+  }
+
+}
+
+@media (min-width:1440px){
+  
+  .header-index{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/Homepage Ollivander/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-index h1{
+    font-size: 64px;
+  }
+
+  .title{
+    font-size: 64px;
+  }
+  
+  .container{
+    opacity:0;
+    display:flex;
+    justify-content: space-around;
+    transition: opacity  2s;
+  }
+  .is-reached{
+    opacity: 1;
+  }
+
+  .container-article{
+    display:flex;
+    justify-content:space-around;
+  }
+  .une{
+    font-size: 30px;
+  }
+  img {
+    transition: transform 1s;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  .cover-article {
+    width: 640px;
+    height: 380px;
+  }
+
+  .teaser{
+    align-items: right;
+  }
+
+}
